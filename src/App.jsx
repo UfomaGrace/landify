@@ -4,6 +4,9 @@ import About from './components/About'
 import Features from './components/Features'
 import Testimonial from './components/Testimonial'
 import Services from './components/Services'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Pricing from './components/Pricing'
 
 function App () {
   return (
@@ -14,6 +17,9 @@ function App () {
       <Features/>
       <Testimonial/>
       <Services/>
+      <Pricing/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }
