@@ -1,7 +1,14 @@
-import {RocketIcon, Check, ArrowRightIcon, ShieldCheckIcon, CircleCheck, Shield, Repeat2, ChartLine, ShieldCheck, Quote} from 'lucide-react'
+import { Element } from "react-scroll";
+
+import {RocketIcon, Check, ArrowRightIcon, ShieldCheckIcon, CircleCheck, Shield, Repeat2, ChartLine, ShieldCheck, Quote, Zap} from 'lucide-react'
+import { BsRocketTakeoff } from "react-icons/bs";
+import { IoShieldHalfOutline } from "react-icons/io5";
+import { GoZap } from "react-icons/go";
+import { FaHeartbeat } from "react-icons/fa";
+
 function Features () {
     return (
-        <div>
+        <Element name="features">
             <div className="p-16 mt-16 scroll-mt-24 overflow-clip">
                 <div className="relative text-center ">
                     <h2 className="absolute inset-0 flex items-center justify-center text-5xl top-1 font-bold text-[#1938380d] z-10 uppercase pointer-events-none">
@@ -19,27 +26,55 @@ function Features () {
   
                 <div className="rounded-md bg-white p-10 shadow-2xl mt-20">
                     <div className="flex gap-8"> 
-                        <div className="flex-1 rounded-md bg-teal-600 text-white p-6">
-                            <h5 className="font-semibold text-[16px]">Innovation</h5>
-                            <p className="text-sm mt-1">Cuttin-edge Solutions</p>
+                        <div className="flex-1 shadow-lg transform transition-all hover:-translate-y-1 duration-500 shadow-[#00a19e4d] rounded-2xl bg-[#00a19e] text-white p-6">
+                            <div className="flex gap-3">
+                                <i className="rounded-2xl flex bg-white w-14 h-14 items-center justify-center text-center text-[#00a19e]">
+                                    <BsRocketTakeoff className='w-6 h-6' />
+                                </i>
+                                <div className="whitespace-nowrap">
+                                    <h5 className="font-semibold text-[16px]">Innovation</h5>
+                                    <p className="text-sm mt-1">Cuttin-edge Solutions</p>
+                                </div>
+                            </div>
                         </div>
                     
 
-                        <div className="flex-1 rounded-md bg-white p-6 border border-gray-200">
-                            <h5 className="font-semibold text-[16px]">Security</h5>
-                            <p className="text-gray-500 text-sm mt-1">Advanced Protection</p>
+                        <div className="flex-1 transform transition-all border border-gray-200 group hover:-translate-y-1 duration-500 hover:shadow-[#0aa19e2c] hover:shadow-lg rounded-2xl hover:bg-[#00a19e] bg-white p-6">
+                            <div className="flex gap-3">
+                                <i className="rounded-2xl flex group-hover:bg-white group-hover:text-[#00a19e] text-white w-14 h-14 items-center justify-center text-center bg-[#00a19e]">
+                                    <IoShieldHalfOutline className='w-6 h-6' />
+                                </i>
+                                <div className="whitespace-nowrap group-hover:text-white">
+                                    <h5 className="font-semibold text-[16px]">Security</h5>
+                                    <p className="text-gray-500 group-hover:text-white text-sm mt-1">Advanced Protection</p>
+                                </div>
+                            </div>
                         </div>
 
 
-                        <div className="flex-1 rounded-md bg-white p-6 border border-gray-200">   
-                            <h5 className="font-semibold text-[16px]">Performance</h5> 
-                            <p className="text-gray-500 text-sm mt-1">Lightning fast speed</p>
+                        <div className="flex-1 transform transition-all border border-gray-200 group hover:-translate-y-1 duration-500 hover:shadow-[#0aa19e2c] hover:shadow-lg rounded-2xl hover:bg-[#00a19e] bg-white p-6">
+                            <div className="flex gap-3">
+                                <i className="rounded-2xl flex group-hover:bg-white group-hover:text-[#00a19e] text-white w-14 h-14 items-center justify-center text-center bg-[#00a19e]">
+                                    <GoZap className='w-6 h-6' />
+                                </i>
+                                <div className="whitespace-nowrap group-hover:text-white">
+                                    <h5 className="font-semibold text-[16px]">Performance</h5>
+                                    <p className="text-gray-500 group-hover:text-white text-sm mt-1">Lightning Fast Speed</p>
+                                </div>
+                            </div>
                         </div>
 
 
-                        <div className="flex-1 rounded-md bg-white p-6 border border-gray-200">
-                            <h5 className="font-semibold text-[16px]">Support</h5>
-                            <p className="text-gray-500 text-sm mt-1">24/7 assistance</p>
+                        <div className="flex-1 transform transition-all border border-gray-200 group hover:-translate-y-1 duration-500 hover:shadow-[#0aa19e2c] hover:shadow-lg rounded-2xl hover:bg-[#00a19e] bg-white p-6">
+                            <div className="flex gap-3">
+                                <i className="rounded-2xl flex group-hover:bg-white group-hover:text-[#00a19e] text-white w-14 h-14 items-center justify-center text-center bg-[#00a19e]">
+                                    <FaHeartbeat className='w-6 h-6' />
+                                </i>
+                                <div className="whitespace-nowrap group-hover:text-white">
+                                    <h5 className="font-semibold text-[16px]">Support</h5>
+                                    <p className="text-gray-500 group-hover:text-white text-sm mt-1">24/7 assistance</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -48,10 +83,12 @@ function Features () {
                     <div className="flex pr-10">
                         <div className="m-10 flex-1/3">
                             <div className="w-17 h-17 rounded-2xl bg-teal-600 items-center justify-center mb-6 shadow-teal-300 mt-8 flex text-white"><RocketIcon/></div>
-                            <h3 className="text-4xl font-bold mb-5 leading-5 text-[#193838]">Innovation Excellence</h3>
-                            <p className="text-[#3b5353cc] mb-7 leading-7 text-[16px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                                totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
-                            </p>
+                            <div>
+                                    <h3 className="text-4xl font-bold mb-5 leading-5 text-[#193838]">Innovation Excellence</h3>
+                                    <p className="text-[#3b5353cc] mb-7 leading-7 text-[16px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                                        totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
+                                    </p>
+                            </div>
                             <div >
                                 <ul className='grid grid-cols-2 gap-4'>
                                     <li className=" mb-2.5 text-sm text-start flex gap-2.5"><CircleCheck className="bg-white flex-none text-[#00a19e] w-5 h-5"/>Excepteur sint occaecat cupidatat non proident</li>
@@ -79,8 +116,8 @@ function Features () {
                                 <button className="flex bg-[#00a19e] text-white px-9 py-4 gap-2 rounded-4xl transition-colors font-semibold items-center ">Learn More<ArrowRightIcon className="flex w-5 h-5"/></button>
                             </div>
                         </div>
-                        <div className="flex-1/2 flex items-center">
-                            <img src="/Images/features-1.webp" alt="Features" className="rounded-3xl" />
+                        <div className="flex-1/2 flex items-center  overflow-hidden">
+                            <img src="/Images/features-1.webp" alt="Features" className="transition-transform duration-500 hover:scale-105 hover:rounded-3xl rounded-2xl" />
                         </div>
                     </div>
                 </div>
@@ -225,7 +262,7 @@ function Features () {
                     <img src='/Images/transform.webp' alt='Transform your business' className='rounded-4xl' />
                 </div>
             </div>
-        </div>
+        </Element>
 
     )
 }

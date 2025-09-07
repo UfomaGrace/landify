@@ -1,10 +1,11 @@
+import { Element } from "react-scroll";
 import { BsEnvelopeAt, BsGeoAlt, } from "react-icons/bs";
 import { LuPhone } from "react-icons/lu";
 import { GoArrowRight } from "react-icons/go";
 
 function Contact () {
     return (
-        <div>
+        <Element name="contact">
             <div className="bg-[#f0f6f5] scroll-mt-23 overflow-clip py-15">
                 <div className="relative text-center ">
                     <h2 className="absolute inset-0 flex items-center justify-center text-5xl top-1 font-bold text-[#1938380d] z-10 uppercase pointer-events-none">
@@ -61,7 +62,7 @@ function Contact () {
                     </div>
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }
 export default Contact

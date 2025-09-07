@@ -47,7 +47,7 @@ function Footer () {
                     </div>
                 </div>
             </div>
-                <div className="mx-14 px-6 text-center py-6 justify-center bg-teal-900">
+                <div className="mx-12 px-6 text-center py-6 justify-center bg-teal-900">
                     <p>&copy; Copyright MyWebsite All Rights Reserved</p>
                     <p className="mt-1">Designed by <a href="" className="text-teal-600 hover:text-teal-700">BootstrapMade</a></p>
                 </div>

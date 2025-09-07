@@ -1,7 +1,9 @@
+import { Element } from "react-scroll";
 import {CirclePlay} from 'lucide-react'
+import { BsLightbulb, BsPeople, BsAward } from "react-icons/bs";
 function Journey () {
     return (
-        <div className="flex bg-gradient-to-tr from-[#00a19e1e] to-[#fff] border-0">
+        <Element name="home"className="mt-25 p-6 flex bg-gradient-to-tr from-[#00a19e1e] to-[#fff] border-0">
             <div className="m-10 flex-1">  
                 <h1 className="block font-normal leading-tight mb-8 text-6xl text-[#193838]">Creating Digital Experiences That Matters</h1>
                 <p className="my-5 text-gray-500 text-2xl leading-relaxed font-light mb-12">We craft beautiful, functional, and meaningful digital solutions that help businesses connect with their audiences in authentic ways.</p>
@@ -28,10 +30,28 @@ function Journey () {
                     </div>
                 </div>
             </div>
-            <div className="flex-1 flex items-center ">
-                <img src="/Images/main-image.webp" alt="Illustration" />
+            <div className="flex-1 flex items-center relative">
+                <div className="">
+                    <img src="/Images/main-image.webp" alt="Illustration" />
+                </div>
+
+                <div className="flex gap-3 mr-10 mt-10 rounded-md p-5 animate-bounce [animation-duration:5s] right-40 top-40 absolute bg-white shadow-sm">
+                    <span className="text-[#00a19e]"><BsLightbulb /></span>
+                    <span className="text-sm font-medium">Innovation</span>
+                </div>
+
+                <div className="flex gap-3 mb-35 rounded-md p-5 animate-bounce [animation-duration:4s] bottom-30 left-8 absolute bg-white shadow-sm">
+                    <span className="text-[#00a19e]"><BsPeople /></span>
+                    <span className="text-sm font-medium">Collaboration</span>
+                </div>
+
+                <div className="flex gap-3 mb-35 rounded-md p-5 animate-bounce [animation-duration:5s] right-10 bottom-40 absolute bg-white shadow-sm">
+                    <span className="text-[#00a19e]"><BsAward /></span>
+                    <span className="text-sm font-medium">Excellence</span>
+                </div>
             </div>
-        </div>
+            
+        </Element>
     )
 }
 export default Journey

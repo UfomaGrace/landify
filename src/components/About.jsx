@@ -1,8 +1,10 @@
+import { Element } from "react-scroll";
+
 import {ShieldCheckIcon, Zap, HeadsetIcon} from 'lucide-react'
 function About () {
     return (
-        <div href="about" id="about">
-            <div className="flex">
+        <div>
+            <Element name="about" className="flex">
                 <div className="m-14 flex-1">
                     <span className="inline-block bg-[#00a19e1a] text-teal-600 py-2 px-4 rounded-md text-sm font-semibold uppercase tracking-wide">ABOUT OUR COMPANY</span>
                     <h2 className="text-4xl font-bold leading-tight [unicode-bidi:isolate] mt-6">Tempor incididunt ut labore et dolore magna</h2>
@@ -39,7 +41,7 @@ function About () {
                     <img src="/Images/about-image2.webp" alt="Staffs" className="rounded-md transform transition-transform duration-500 hover:scale-110 col-span-1 w-full h-auto"/>
                     <img src="/Images/about-image3.webp" alt="meetings" className="rounded-md transform transition-transform duration-500 hover:scale-110 col-span-1 w-full h-auto"/>
                 </div>
-            </div>
+            </Element>
             <div className="flex flex-col md:flex-row gap-6 mr-10 ml-10 mb-10 items-center justify-center">
                 <div className="flex flex-col items-center text-center p-6 mb-10">
                     <div className="flex items-center justify-center mb-6 mx-auto w-17 h-17 text-2xl text-white transition-transform duration-300 hover:translate-y-[-0.5rem] rounded-full bg-teal-600">
